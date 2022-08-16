@@ -1,73 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Rubs</title>
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="icon" href="assets/profilepic2.png">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="personal_website">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>personal_website</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '2345772866';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
-
 <body>
-    <div class="Head d-flex justify-content-center">
-        <div class="d-flex justify-content-start w-75">
-            <div class="ProfilePicContainer d-flex justify-content-start align-items-end">
-                <div class=" items d-flex justify-content-start align-items-end">
-                    <a href="https://twitter.com/dev_rubs" target="_blank"><i class="item lab la-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="item lab la-instagram"></i></a>
-                    <a href="https://www.facebook.com/rubem.fridolinochristneto/" target="_blank"><i class="item lab la-facebook-f"></i></a>
-                    <a href="https://wa.me/+351911134066" target="_blank"><i class="item lab la-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="PrimaryInfo">
-                <h2 style="font-size: 5vh;">Dev Rubs</h2>
-                <h3 style="font-size: 2vh;">Mobile developer<br> Game developer</h3>
-                <hr />
-                <div class="section d-flex justify-content-start align-items-end">
-                    <a href="https://dev-rubs.itch.io" target="_blank"><button type="button" class="btn btn-dark"
-                            style="height: 6vh;width: 20vh; font-size: 2vh; font-weight: bold;">Past
-                            Projects</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="Title d-flex justify-content-center align-items-center flex-column ">
-        <div class="TitleElements w-75">
-            <h3 style="font-size: 3vh;">About Me</h3>
-            <hr />
-        </div>
-    </div>
-
-    <div class="TextContainer d-flex justify-content-center align-items-center flex-column">
-        <p class="w-75" style="font-size: 3.5vh;">
-            Hi, I'm Dev Rubs, a <a href="https://flutter.dev/">Flutter</a> and <a href="https://unity.com/">Unity</a> Developer that focuses on front-end
-            programming.
-            I usually work as a solo dev, but looking forward meeting new people in the industry and to collab with as
-            many new faces and projects in my, for now, junior career.
-        </p>
-    </div>
-    <br>
-
-    <div class="Title d-flex justify-content-center align-items-center flex-column " style="margin-bottom: 3vh;">
-        <div class="TitleElements w-75">
-            <h3 style="font-size: 3vh;">Used Technologies</h3>
-            <hr />
-        </div>
-    </div>
-    <div class="Tecnologies d-flex justify-content-center align-items-center " style="height: 5.5vh;">
-        <img href="" src="assets/flutter.svg" alt="">
-        <img src="assets/android-logo-2.svg" alt="">
-        <img src="assets/unity-69.svg" alt="">
-        <img src="assets/visual-studio-code-1.svg" alt="">
-    </div>
-
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
 </body>
-
 </html>
